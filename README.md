@@ -1,3 +1,4 @@
+```markdown
 # User Management Application - README
 
 This repository contains the source code for a User Management application built using Flutter. This application allows users to perform various operations related to user management, with distinct roles and permissions for Admin and regular Users.
@@ -18,11 +19,18 @@ This repository contains the source code for a User Management application built
 ## Features
 
 * **Secure Authentication:** Utilizes a robust authentication system with password hashing and OTP verification.
+    <img src="assets/screenshot/screenshots/1.png" width="200"> 
+
 * **CRUD Operations:** Enables Create, Read, Update, and Delete operations for user management.
+    <img src="assets/screenshots/4.png" width="200"> 
+    <img src="assets/screenshots/5.png" width="200"> 
+    <img src="assets/screenshots/6.png" width="200"> 
+
 * **User-Friendly Interface:** Provides an intuitive and responsive user interface for seamless interaction.
-* **Modular Architecture:** Organized codebase with clear separation of concerns for maintainability and scalability.
-* **State Management:** (If applicable, mention the state management solution used, e.g., Provider, Bloc, Riverpod)
-* **API Integration:** (If applicable, mention the API used for backend communication)
+    <img src="assets/screenshots/2.png" width="200"> 
+    <img src="assets/screenshots/3.png" width="200"> 
+
+
 
 ## Roles and Permissions
 
@@ -71,6 +79,10 @@ Follow these steps to set up and run the application on your local machine.
     ```
 
 ## Project Structure
+
+Here's an overview of the project's directory structure:
+
+<img src="screenshots/project_structure.png" width="500"> 
 
 The project is organized into the following directories:
 

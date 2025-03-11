@@ -18,16 +18,16 @@ This repository contains the source code for a User Management application built
 ## Features
 
 * **Secure Authentication:** Utilizes a robust authentication system with password hashing and OTP verification.
-    <img src="assets/screenshot/screenshots/1.png" width="200"> 
+    <img src="/assets/screenshot/1.png" width="200"> 
 
 * **CRUD Operations:** Enables Create, Read, Update, and Delete operations for user management.
-    <img src="assets/screenshots/4.png" width="200"> 
-    <img src="assets/screenshots/5.png" width="200"> 
-    <img src="assets/screenshots/6.png" width="200"> 
+    <img src="/assets/screenshots/4.png" width="200"> 
+    <img src="/assets/screenshots/5.png" width="200"> 
+    <img src="/assets/screenshots/6.png" width="200"> 
 
 * **User-Friendly Interface:** Provides an intuitive and responsive user interface for seamless interaction.
-    <img src="assets/screenshots/2.png" width="200"> 
-    <img src="assets/screenshots/3.png" width="200"> 
+    <img src="/assets/screenshots/2.png" width="200"> 
+    <img src="/assets/screenshots/3.png" width="200"> 
 
 
 

@@ -21,13 +21,13 @@ This repository contains the source code for a User Management application built
     <img src="/assets/screenshot/1.png" width="200"> 
 
 * **CRUD Operations:** Enables Create, Read, Update, and Delete operations for user management.
-    <img src="/assets/screenshots/4.png" width="200"> 
-    <img src="/assets/screenshots/5.png" width="200"> 
-    <img src="/assets/screenshots/6.png" width="200"> 
+    <img src="/assets/screenshot/4.png" width="200"> 
+    <img src="/assets/screenshot/5.png" width="200"> 
+    <img src="/assets/screenshot/6.png" width="200"> 
 
 * **User-Friendly Interface:** Provides an intuitive and responsive user interface for seamless interaction.
-    <img src="/assets/screenshots/2.png" width="200"> 
-    <img src="/assets/screenshots/3.png" width="200"> 
+    <img src="/assets/screenshot/2.png" width="200"> 
+    <img src="/assets/screenshot/3.png" width="200"> 
 
 
 
@@ -81,7 +81,7 @@ Follow these steps to set up and run the application on your local machine.
 
 Here's an overview of the project's directory structure:
 
-<img src="screenshots/project_structure.png" width="500"> 
+<img src="/assets/screenshot/7.png" width="500"> 
 
 The project is organized into the following directories:
 

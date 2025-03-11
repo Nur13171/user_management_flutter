@@ -199,40 +199,40 @@ class _LogingScreenState extends State<LogingScreen> {
                 SizedBox(
                   height: 15.h,
                 ),
-                Container(
-                  width: 375.w,
-                  padding: EdgeInsets.only(right: 30.w),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CustomText(
-                        title: "Don’t have an account?",
-                        fontSize: 14.sp,
-                        fontWeight: FontWeight.w600,
-                        textColor: AppColors.deepGrey,
-                        textAlign: TextAlign.right,
-                      ),
-                      SizedBox(
-                        width: 4.w,
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => SignUpScreen()));
-                        },
-                        child: CustomText(
-                          title: "Singup",
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w600,
-                          textColor: AppColors.primaryColor,
-                          textAlign: TextAlign.right,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                // Container(
+                //   width: 375.w,
+                //   padding: EdgeInsets.only(right: 30.w),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.center,
+                //     children: [
+                //       CustomText(
+                //         title: "Don’t have an account?",
+                //         fontSize: 14.sp,
+                //         fontWeight: FontWeight.w600,
+                //         textColor: AppColors.deepGrey,
+                //         textAlign: TextAlign.right,
+                //       ),
+                //       SizedBox(
+                //         width: 4.w,
+                //       ),
+                //       InkWell(
+                //         onTap: () {
+                //           Navigator.push(
+                //               context,
+                //               MaterialPageRoute(
+                //                   builder: (context) => SignUpScreen()));
+                //         },
+                //         child: CustomText(
+                //           title: "Singup",
+                //           fontSize: 14.sp,
+                //           fontWeight: FontWeight.w600,
+                //           textColor: AppColors.primaryColor,
+                //           textAlign: TextAlign.right,
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),

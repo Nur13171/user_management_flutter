@@ -78,7 +78,7 @@ class _AddUserPageState extends State<AddUserPage> {
         drawer: CustomDrawer(),
         appBar: AppBar(
           iconTheme: const IconThemeData(color: Colors.white),
-          backgroundColor: AppColors.primaryColor,
+          backgroundColor: Colors.teal,
           centerTitle: true,
           title: const Text(
             'Add User',
@@ -286,7 +286,7 @@ class _AddUserPageState extends State<AddUserPage> {
                         height: 48.h,
                         textColor: Color(0xffFCFCFC),
                         radius: 41.r,
-                        color: AppColors.primaryColor,
+                        color: Colors.teal,
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w600,
                       )

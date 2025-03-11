@@ -99,4 +99,64 @@ class UserService {
       return {"success": false, "error": e.toString()};
     }
   }
+
+
+  // Fetch user details
+  static Future<Map<String, dynamic>> getUserDetails(int userId) async {
+    String token = await getToken();
+    try {
+      final response = await http.get(
+        Uri.parse("$USER_DETAIL_ENDPOINT/$userId"),
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer $token",
+        },
+      );
+
+      if (response.statusCode == 200) {
+        return {"success": true, "data": jsonDecode(response.body)};
+      } else {
+        return {"success": false, "error": jsonDecode(response.body)["message"]};
+      }
+    } catch (e) {
+      return {"success": false, "error": e.toString()};
+    }
+  }
+
+
+// Update User Function
+  static Future<Map<String, dynamic>> updateUser(int userId, String name, String email) async {
+    try {
+      // Retrieve token from shared preferences
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      String token = prefs.getString('token') ?? '';
+
+      final response = await http.put(
+        Uri.parse("$BASE_URL/users/$userId"),  // Endpoint for updating user
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer $token",
+        },
+        body: jsonEncode({
+          "name": name,
+          "email": email,
+        }),
+      );
+
+      print("Response Code: ${response.statusCode}");
+      print("Response Body: ${response.body}");
+
+      if (response.statusCode == 200) {
+        return {"success": true, "message": jsonDecode(response.body)["message"]};
+      } else {
+        return {"success": false, "error": jsonDecode(response.body)["message"]};
+      }
+    } catch (e) {
+      print("Error: $e");
+      return {"success": false, "error": e.toString()};
+    }
+  }
+
 }

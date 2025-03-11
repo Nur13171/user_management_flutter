@@ -7,4 +7,6 @@ class UserController {
   static Future<Map<String, dynamic>> addUser(UserModel user) async {
     return await UserService.addUser(REGISTER_ENDPOINT, user.toJson());
   }
+
+
 }

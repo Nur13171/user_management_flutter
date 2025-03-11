@@ -35,38 +35,38 @@ class _SignUpScreenState extends State<SignUpScreen> {
   bool isLoading = false;
 
   void _register() async {
-    if (_formKey.currentState?.validate() ?? false) {
-      setState(() {
-        isLoading = true;
-      });
+    // if (_formKey.currentState?.validate() ?? false) {
+    //   setState(() {
+    //     isLoading = true;
+    //   });
 
-      // Create user object
-      UserModel newUser = UserModel(
-        username: usernameController.text,
-        email: emailController.text,
-        password: passwordController.text,
-      );
+    //   // Create user object
+    //   UserModel newUser = UserModel(
+    //     username: usernameController.text,
+    //     email: emailController.text,
+    //     password: passwordController.text,
+    //   );
 
-      // Call API
-      var response = await UserController.register(newUser);
+    //   // Call API
+    //   var response = await UserController.register(newUser);
 
-      setState(() {
-        isLoading = false;
-      });
+    //   setState(() {
+    //     isLoading = false;
+    //   });
 
-      if (response["success"]) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Registration Successful!")),
-        );
+    //   if (response["success"]) {
+    //     ScaffoldMessenger.of(context).showSnackBar(
+    //       SnackBar(content: Text("Registration Successful!")),
+    //     );
 
-        // Navigate to Login Screen
-        //Navigator.pushReplacementNamed(context, "/login");
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Error: ${response["error"]}")),
-        );
-      }
-    }
+    //     // Navigate to Login Screen
+    //     //Navigator.pushReplacementNamed(context, "/login");
+    //   } else {
+    //     ScaffoldMessenger.of(context).showSnackBar(
+    //       SnackBar(content: Text("Error: ${response["error"]}")),
+    //     );
+    //   }
+    // }
   }
 
   @override

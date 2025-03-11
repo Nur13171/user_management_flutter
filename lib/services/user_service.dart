@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class UserService {
-  static Future<Map<String, dynamic>> register(
+  static Future<Map<String, dynamic>> addUser(
       String url, Map<String, dynamic> data) async {
     try {
       print("Sending request to: $url");

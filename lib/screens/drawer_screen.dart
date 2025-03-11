@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:user_management/screens/add_user.dart';
 import 'package:user_management/screens/loging_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -158,10 +159,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
                   children: [
-                    buildSubMenuItem(
-                        "Add User", Icons.person_add), // 👤 "Add User" icon
-                    buildSubMenuItem(
-                        "User List", Icons.list_alt), // 📋 "User List" icon
+                    buildSubMenuItem("Add User", Icons.person_add,
+                        page: AddUserPage(), context: context),
+                    buildSubMenuItem("User List", Icons.list,
+                        page: AddUserPage(), context: context),
                   ],
                 ),
 
@@ -214,7 +215,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
   }
 
   // Submenu Item
-  Widget buildSubMenuItem(String title, IconData icon) {
+  Widget buildSubMenuItem(String title, IconData icon,
+      {Widget? page, BuildContext? context}) {
     return ListTile(
       leading: Icon(icon, color: Colors.grey.shade700, size: 20),
       title: Text(
@@ -225,7 +227,14 @@ class _CustomDrawerState extends State<CustomDrawer> {
             color: Colors.grey.shade800),
       ),
       onTap: () {
-        Navigator.pop(context);
+        if (page != null && context != null) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) =>
+                    page), // Navigate only if page is provided
+          );
+        }
       },
     );
   }

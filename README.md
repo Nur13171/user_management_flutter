@@ -1,4 +1,3 @@
-```markdown
 # User Management Application - README
 
 This repository contains the source code for a User Management application built using Flutter. This application allows users to perform various operations related to user management, with distinct roles and permissions for Admin and regular Users.
@@ -139,5 +138,3 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
-
----
